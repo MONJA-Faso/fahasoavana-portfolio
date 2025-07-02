@@ -150,7 +150,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                   
                   <div className="w-72 h-72 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                     
-                  <img src="/public/img/profil-2.webp" alt="pdp" />
+                  <img src="/img/profil-2.webp" alt="pdp" />
                     <span className="text-6xl text-gray-500"></span>
                   </div>
                 </div>

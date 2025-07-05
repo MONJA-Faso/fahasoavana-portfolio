@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Mail, Phone, MapPin, Github, Linkedin, Download, MessageSquare } from 'lucide-react';
+import { gtagEvent } from '../utils/analytics';
 
 interface HeroProps {
   darkMode: boolean;
@@ -75,6 +76,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
+
+              onClick={() => gtagEvent('download_cv', 'Interaction', 'Téléchargement CV')}
+
               href="/cv_fahasoavana.pdf"
               download
               className="bg-fuchsia-500 hover:bg-fuchsia-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
@@ -84,7 +88,12 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             </a>
 
               <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+
+                onClick={() => 
+                  {
+                    gtagEvent('click_contact', 'Navigation', 'Scroll vers Contact');
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 className={`border-2 border-fuchsia-500 text-fuchsia-500 hover:bg-fuchsia-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 ${
                   darkMode ? 'hover:text-white' : 'hover:text-white'
                 }`}
@@ -96,6 +105,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             {/* Social Links */}
             <div className="flex gap-4 mt-8 justify-center lg:justify-start">
               <a 
+
+                onClick={() => gtagEvent('click_github', 'Réseaux sociaux', 'GitHub')}
+
                 href="https://github.com/MONJA-Faso" 
                 className={`p-3 rounded-lg transition-colors duration-200 ${
                   darkMode 
@@ -106,6 +118,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                 <Github size={20} />
               </a>
               <a 
+
+                onClick={() => gtagEvent('click_linkedin', 'Réseaux sociaux', 'linkedin')}
+
                 href="https://www.linkedin.com/in/fahaso-monja-9785912a8/" 
                 className={`p-3 rounded-lg transition-colors duration-200 ${
                   darkMode 
@@ -116,6 +131,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                 <Linkedin size={20} />
               </a>
               <a 
+
+                onClick={() => gtagEvent('click_whatsapp', 'Réseaux sociaux', 'WhatsApp')}
+
                 href="https://wa.me/261347099370"
                 target="_blank"
                 rel="noopener noreferrer"

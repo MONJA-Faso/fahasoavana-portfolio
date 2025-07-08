@@ -14,7 +14,8 @@ const Skills: React.FC<SkillsProps> = ({ darkMode }) => {
         { name: 'Tailwind CSS', level: 88 },
         { name: 'Bootstrap', level: 82 },
         { name: 'HTML5/CSS3', level: 95 },
-        { name: 'JavaScript', level: 90 }
+        { name: 'JavaScript', level: 90 },
+        { name: '', level: 75 }
       ]
     },
     {
@@ -25,7 +26,8 @@ const Skills: React.FC<SkillsProps> = ({ darkMode }) => {
         { name: 'PHP', level: 78 },
         { name: 'API REST', level: 85 },
         { name: 'Shell', level: 70 },
-        { name: 'Ruby', level: 65 }
+        { name: 'Ruby', level: 65 },
+        { name: 'JAVA', level: 45 }
       ]
     },
     {
@@ -52,6 +54,7 @@ const Skills: React.FC<SkillsProps> = ({ darkMode }) => {
   
 
   const tools = [
+    'FlutterFlow', 'Wordpress', 'KNIME', 'Figma',
     'VS Code', 'Android Studio', 'Draw.io', 'PlantUML', 'Visual Paradigm',
     'GNS3', 'Packet Tracer', 'VirtualBox', 'Proxmox', 'Vagrant', 'Ansible',
     'Prometheus', 'Grafana', 'ELK Stack', 'Jenkins', 'GitLab', 'Kali Linux'

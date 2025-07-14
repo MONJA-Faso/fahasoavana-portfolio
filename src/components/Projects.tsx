@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       image: '/img/capt_medcare.png',
       technologies: ['React', 'Express.js', 'MySQL', 'TypeScript', 'Tailwind'],
       features: ['Authentification', 'Gestion des rôles', 'Dashboard', 'API REST'],
-      demoLink: 'gestion-patient.vercel.app',
+      demoLink: 'https://gestion-patient.vercel.app',
       githubLink: '#',
       duration: '2 mois',
       team: '3 développeurs'

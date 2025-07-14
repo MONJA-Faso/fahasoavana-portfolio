@@ -209,6 +209,12 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
+                      Data sciences avec KNIME ( E-DEA Academy, Juillet 2025 )
+                    </span>
+                    <ExternalLink size={16} className="text-fuchsia-500" />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
                       Développement avec Python – ODC Fianarantsoa (Avril 2025)
                     </span>
                     <ExternalLink size={16} className="text-fuchsia-500" />

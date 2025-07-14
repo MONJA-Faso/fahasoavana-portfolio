@@ -121,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
 
                 onClick={() => gtagEvent('click_linkedin', 'Réseaux sociaux', 'linkedin')}
 
-                href="https://www.linkedin.com/in/fahaso-monja-9785912a8/" 
+                href="https://www.linkedin.com/in/rabefinoana-fahasoavana-monja-9785912a8/" 
                 className={`p-3 rounded-lg transition-colors duration-200 ${
                   darkMode 
                     ? 'bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white' 

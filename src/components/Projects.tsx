@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       image: '/img/capt_medcare.png',
       technologies: ['React', 'Express.js', 'MySQL', 'TypeScript', 'Tailwind'],
       features: ['Authentification', 'Gestion des rôles', 'Dashboard', 'API REST'],
-      demoLink: '#',
+      demoLink: 'gestion-patient.vercel.app',
       githubLink: '#',
       duration: '2 mois',
       team: '3 développeurs'
@@ -29,7 +29,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       ],
       features: ['Carte interactive', 'Notifications', 'messagerie', 'payement'],
       demoLink: '#',
-      githubLink: '#',
+      githubLink: 'https://gitlab.com/MONJA89/my-project',
       duration: '3 mois',
       team: '1 développeur / DevOps'
     },

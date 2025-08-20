@@ -28,7 +28,8 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               }`}>
                 <Typewriter
                   words={[
-                    "Ingénieur DevOps Junior",
+                    "Apprenti MLDevSecOps",
+                    "Ingénieur DevOps",
                     "Développeur Full Stack Passionné",
                     "Amoureux de l'Automatisation",
                     "Explorateur de l'IA et des Données",

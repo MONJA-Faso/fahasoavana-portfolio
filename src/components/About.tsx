@@ -52,28 +52,20 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className={`text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Mon histoire
+              Mon parcours & Expertise
             </h3>
             <div className="space-y-4">
               <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              Passionné par l'informatique et la résolution de problèmes complexes, j’ai découvert très tôt 
-              un fort intérêt pour le développement logiciel. Au fil de mes études à l'École Nationale 
-              d’Informatique, j’ai pu approfondir mes compétences 
-              en développement web, en DevOps et en intelligence artificielle à 
-              travers des projets académiques et professionnels concrets.
+                Passionné par l'intersection entre l'infrastructure, la sécurité et l'Intelligence Artificielle, j'ai évolué du développement logiciel vers une spécialisation pointue en <strong className="font-semibold text-blue-500">DevSecOps</strong> et <strong className="font-semibold text-blue-500">MLOps</strong>. Mon expertise réside dans l'automatisation et la sécurisation des cycles de vie des modèles d'IA complexes.
               </p>
               <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              J’ai eu l’opportunité de travailler sur des projets variés : de la création d'applications web 
-              (comme un système de gestion de restaurant ou une plateforme de visiteurs) à la mise en place 
-              d’infrastructures CI/CD automatisées avec Docker, GitLab CI et Kubernetes.
+                Aujourd'hui, j'interviens sur la mise en place de pipelines MLOps complets — de l'ingestion des données au monitoring en production — tout en gérant des infrastructures critiques (Cloud et On-premise) comme les systèmes haute performance <strong className="font-semibold">Nvidia DGX Spark (GraceBlackwell)</strong>.
               </p>
               <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              Aujourd’hui, je me spécialise dans le développement full-stack avec React, Express, Python et 
-              d'autres technologies modernes, tout en explorant activement l’univers du cloud et de l’infrastructure as code.
+                Je me spécialise dans la conteneurisation (Docker, Kubernetes), l'automatisation via Ansible et la sécurisation multicouche des workflows CI/CD. Mon quotidien consiste à garantir que les services IA sont non seulement performants, mais aussi robustes, scalables et conformes aux meilleures pratiques de cybersécurité.
               </p>
               <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              En dehors du développement, j’aime expérimenter avec les outils réseau, contribuer à des projets open source, 
-              animer des formations locales, et continuer d’apprendre chaque jour.
+                En dehors de l'ingénierie système, j'explore activement les technologies de <strong className="font-semibold">Large Language Models (LLM)</strong>, l'optimisation des ressources GPU et le déploiement de solutions d'observabilité avancées (Stack TIG, Prometheus/Grafana).
               </p>
             </div>
           </div>

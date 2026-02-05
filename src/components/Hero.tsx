@@ -28,9 +28,10 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               }`}>
                 <Typewriter
                   words={[
-                    "Apprenti MLDevSecOps",
-                    "Ingénieur DevOps",
-                    "Développeur Full Stack Passionné",
+                    "Ingénieur DevSecOps",
+                    "Apprenti MLOps",
+                  
+                    "DevOps Passionné",
                     "Amoureux de l'Automatisation",
                     "Explorateur de l'IA et des Données",
                     "Créateur de Solutions Innovantes"
@@ -48,8 +49,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             <p className={`text-lg mb-8 max-w-lg mx-auto lg:mx-0 ${
               darkMode ? 'text-gray-400' : 'text-gray-600'
             }`}>
-              Développeur passionné avec une expertise en développement web moderne, 
-              spécialisé dans la création d'applications performantes et intuitives.
+              Ingénieur DevSecOps & MLOps "Expert en automatisation, sécurisation et industrialisation des cycles de vie IA. 
+              Je pondsère la robustesse des infrastructures Cloud/On-premise avec l'agilité des pipelines MLOps." 
+
             </p>
 
             {/* Contact info */}
@@ -177,10 +179,10 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-fuchsia-500 rounded-full flex items-center justify-center animate-bounce">
-                <span className="text-l">DevOps</span>
+                <span className="text-l">DevSecOps</span>
               </div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-fuchsia-400 to-pink-400 rounded-full flex items-center justify-center animate-pulse">
-                <span className="text-xl">Dev</span>
+                <span className="text-xl">MLOps</span>
               </div>
             </div>
           </div>

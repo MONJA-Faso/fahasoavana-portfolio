@@ -8,14 +8,27 @@ interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
   const experiences = [
     {
+      title: 'Ingénieur DevSecOps & MLOps',
+      company: 'Iris', // Remplace par le nom de ton entreprise
+      location: 'France / 100% Télétravail',
+      period: '2024 – Présent',
+      description: [
+        "Mise en place et automatisation de pipelines MLOps (Ingestion, Entraînement, Validation, Déploiement et Monitoring).",
+        "Conception et maintenance d'infrastructures IA Cloud & On-premise (Entités Giris, Diris, AIris, Liris).",
+        "Conteneurisation et orchestration de services IA (Docker, Kubernetes) et optimisation GPU (Nvidia DGX Spark GB10).",
+        "Sécurisation des pipelines et des données (Gestion des secrets, Whitelisting, Durcissement des conteneurs)."
+      ],
+      technologies: ['Python', 'Docker', 'Kubernetes', 'vLLM', 'Ansible', 'Github Action', 'Stack TIG', 'GPU GB10' , 'Jenkins' , 'Terraform']
+    },
+    {
       title: 'Développeur Full-Stack & DevOps (Stage)',
       company: 'Youth Computing',
       location: 'Fianarantsoa',
       period: 'Septembre 2024 – Décembre 2024',
       description: [
-        "Développement de l'application web 'e-tady' (React.js + Express.js)",
-        "Mise en place de CI/CD avec GitLab CI, Docker, Kubernetes",
-        "Répartition de charge avec HAProxy, supervision via Prometheus et Grafana"
+        "Développement de l'application web 'e-tady' (React.js + Express.js).",
+        "Mise en place de CI/CD avec GitLab CI, Docker, Kubernetes.",
+        "Répartition de charge avec HAProxy, supervision via Prometheus et Grafana."
       ],
       technologies: ['React.js', 'Express.js', 'Docker', 'Kubernetes', 'GitLab CI', 'HAProxy', 'Prometheus', 'Grafana']
     },
@@ -23,12 +36,12 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
       title: 'Développeur Frontend',
       company: 'Youth Computing',
       location: 'Fianarantsoa',
-      period: 'Mars 2025 – Mai 2025',
+      period: 'Mars 2024 – Mai 2024',
       description: [
-        "Développement de l'interface utilisateur de l'application ISERANET",
-        'Utilisation de React.JS et Tailwind CSS pour des interfaces responsives'
+        "Développement de l'interface utilisateur de l'application ISERANET.",
+        "Utilisation de React.js et Tailwind CSS pour des interfaces responsives."
       ],
-      technologies: ['React.js', 'Tailwind CSS']
+      technologies: ['React.js', 'Tailwind CSS', 'JavaScript']
     },
     {
       title: 'Développeur Web (Stage)',
@@ -36,21 +49,10 @@ const Experience: React.FC<ExperienceProps> = ({ darkMode }) => {
       location: 'Toamasina',
       period: 'Septembre 2023 – Janvier 2024',
       description: [
-        "Application web pour la gestion d'affectation de matériels aux employés",
-        'Technologies : PHP, Bootstrap, MySQL'
+        "Application web pour la gestion d'affectation de matériels aux employés.",
+        "Technologies utilisées : PHP, Bootstrap, MySQL."
       ],
       technologies: ['PHP', 'Bootstrap', 'MySQL']
-    },
-    {
-      title: 'Formateur en Bureautique',
-      company: 'Youth Computing',
-      location: 'Fianarantsoa',
-      period: '2024',
-      description: [
-        "Animation de formations dans le cadre des projets Soamampiaty.ai et Trust Spotlight",
-        'Partenariat avec FANAINGA+'
-      ],
-      technologies: ['Microsoft Word', 'Excel', 'PowerPoint','google workspace']
     }
   ];
   

@@ -26,3 +26,4 @@ dist-ssr
 *.tsbuildinfo
 # Local PowerShell cache
 Microsoft/
+.tmp-cv-chrome/

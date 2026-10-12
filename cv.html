@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Fahasoavana MONJA · DevSecOps & MLOps</title>
+  <meta name="description" content="CV de Fahasoavana MONJA : DevSecOps, MLOps, architecture logicielle et conception de solutions IA." />
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --bg: #f8f9f6; --surface: #fff; --ink: #20241e;
+      --muted: #646b61; --line: #dfe3da; --accent: #465b37; --soft: #edf0e8;
+      color: var(--ink); background: var(--soft); color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 9pt; line-height: 1.45; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    h1, h2, h3, p { margin: 0; }
+    .toolbar { max-width: 210mm; margin: 20px auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 12px; }
+    .toolbar p { color: var(--muted); font-size: 12px; }
+    .toolbar button { font: inherit; border: 0; border-radius: 24px; padding: 12px 22px; background: var(--accent); color: var(--bg); cursor: pointer; }
+    .sheet { position: relative; width: 210mm; min-height: 297mm; margin: 0 auto 30px; padding: 12mm; background: var(--bg); box-shadow: 0 15px 60px #23301818; }
+    .flag { display: inline-grid; grid-template-columns: 1fr 2fr; grid-template-rows: 1fr 1fr; width: 24px; height: 16px; border: 1px solid #88908055; border-radius: 2px; overflow: hidden; vertical-align: middle; flex-shrink: 0; }
+    .flag i:first-child { grid-row: span 2; background: white; }
+    .flag i:nth-child(2) { background: #e33b39; }
+    .flag i:last-child { background: #008b52; }
+    .eyebrow { font: 6.5pt/1.6 'SFMono-Regular', Consolas, monospace; letter-spacing: .13em; color: var(--accent); }
+    .identity { display: flex; justify-content: space-between; gap: 8mm; align-items: center; padding-bottom: 6mm; border-bottom: 1px solid var(--line); }
+    .identity .eyebrow { display: flex; align-items: center; gap: 9px; margin-bottom: 3mm; }
+    h1 { font-size: 31pt; line-height: 1.06; letter-spacing: -.06em; font-weight: 650; }
+    h1 span { color: var(--accent); }
+    .role { font-size: 12pt; font-weight: 550; margin-top: 2.5mm; letter-spacing: -.025em; }
+    .motto { margin-top: 2mm; font-size: 8pt; color: var(--muted); }
+    .portrait { width: 27mm; height: 33mm; object-fit: cover; object-position: center; background: #d7dbce; border: 4px solid var(--surface); border-radius: 18mm 18mm 4mm 4mm; flex-shrink: 0; }
+    .profile { padding: 4mm 0; font-size: 8.5pt; color: var(--muted); }
+    .columns { display: grid; grid-template-columns: 57mm minmax(0, 1fr); gap: 7mm; }
+    .sidebar { background: var(--soft); border: 1px solid var(--line); border-radius: 5mm; padding: 4mm; align-self: start; }
+    section { margin-bottom: 4mm; }
+    section:last-child { margin-bottom: 0; }
+    h2 { font-size: 12pt; font-weight: 650; letter-spacing: -.035em; margin-bottom: 2.5mm; }
+    h2 .number { font: 6.5pt Consolas, monospace; color: var(--accent); margin-right: 6px; letter-spacing: .06em; }
+    h3 { font-size: 9pt; line-height: 1.35; font-weight: 650; letter-spacing: -.015em; }
+    .sidebar h3 { margin-bottom: 1mm; font-size: 8pt; }
+    .contact { display: grid; gap: 1.6mm; font-size: 7.5pt; overflow-wrap: anywhere; }
+    .contact a { display: block; }
+    .skill-group { margin-bottom: 2.5mm; }
+    .skill-group p, .education p, .training li { font-size: 7.5pt; color: var(--muted); }
+    .education { margin-bottom: 3mm; }
+    .date { font: 6.5pt/1.5 Consolas, monospace; color: var(--muted); }
+    .education h3 { margin: 1mm 0; }
+    .training { margin: 0; padding-left: 3mm; }
+    .training li { margin-bottom: 1.5mm; }
+    .experience { padding: 0 0 3mm; margin-bottom: 3mm; border-bottom: 1px solid var(--line); break-inside: avoid; }
+    .experience:last-child { margin-bottom: 0; }
+    .experience-header { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; margin-bottom: 1mm; }
+    .company { font-weight: 600; color: var(--accent); font-size: 8pt; }
+    .location { font-size: 7pt; color: var(--muted); margin-bottom: 1.5mm; }
+    .experience ul { margin: 1.5mm 0 2mm; padding-left: 3.5mm; font-size: 8pt; color: var(--muted); }
+    .experience li { margin-bottom: 1mm; }
+    li::marker { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 1mm; }
+    .tags span { border-radius: 1mm; padding: .6mm 1.4mm; background: var(--soft); color: var(--accent); font-size: 6.5pt; }
+    .projects { display: grid; gap: 1.5mm; font-size: 7.5pt; color: var(--muted); }
+    .projects strong { color: var(--ink); }
+    footer { display: flex; justify-content: space-between; gap: 4mm; margin-top: 5mm; padding-top: 3mm; border-top: 1px solid var(--line); font: 6pt/1.5 Consolas, monospace; letter-spacing: .06em; color: var(--muted); }
+    @page { size: A4 portrait; margin: 0; }
+    @media print {
+      html, body { background: white; }
+      body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .toolbar { display: none; }
+      .sheet { width: 210mm; min-height: 0; margin: 0; padding: 8mm; box-shadow: none; }
+      body { line-height: 1.25; }
+      .identity { padding-bottom: 2mm; break-inside: avoid; }
+      .identity .eyebrow { margin-bottom: 2mm; }
+      .role { margin-top: 1.5mm; }
+      .motto { margin-top: 1mm; }
+      .portrait { height: 28mm; }
+      .profile { padding: 2mm 0; }
+      .columns { grid-template-columns: 53mm minmax(0, 1fr); gap: 5mm; }
+      .sidebar { padding: 3.5mm; break-inside: avoid; }
+      .sidebar section { margin-bottom: 2mm; }
+      .skill-group { margin-bottom: 1mm; }
+      .education { margin-bottom: 1mm; }
+      .training li { margin-bottom: .5mm; }
+      section { margin-bottom: 3mm; }
+      h2 { margin-bottom: 2mm; }
+      .experience { padding-bottom: 1.5mm; margin-bottom: 1.5mm; }
+      .experience ul { margin: 1mm 0 1.5mm; }
+      .experience li { margin-bottom: .7mm; }
+      .location { margin-bottom: 1mm; }
+      footer { margin-top: 3mm; padding-top: 2mm; break-inside: avoid; }
+      p, li { orphans: 3; widows: 3; }
+      a { text-decoration: none; }
+      h2, h3 { break-after: avoid; }
+      .education, .skill-group { break-inside: avoid; }
+    }
+    @media screen and (max-width: 820px) {
+      .sheet { width: calc(100% - 24px); min-height: 0; padding: 24px; }
+      .toolbar { flex-wrap: wrap; }
+      h1 { font-size: clamp(24px, 5.5vw, 41px); }
+      .columns { grid-template-columns: minmax(150px, 1fr) 2fr; gap: 20px; }
+    }
+    @media screen and (max-width: 560px) {
+      .columns { grid-template-columns: 1fr; }
+      .portrait { width: 65px; height: 85px; }
+      .identity { gap: 14px; }
+      .role { font-size: 11pt; }
+      .experience-header, footer { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <p>CV · A4 — Impression à 100 %, sans en-têtes ni pieds de page du navigateur.</p>
+    <button type="button" onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+  </div>
+  <main class="sheet" aria-label="Curriculum vitæ de Fahasoavana MONJA">
+    <header class="identity">
+      <div>
+        <div class="eyebrow"><span class="flag" role="img" aria-label="Drapeau de Madagascar"><i></i><i></i><i></i></span> DEVSECOPS · MLOPS</div>
+        <h1>Fahasoavana <span>MONJA</span></h1>
+        <p class="role">DevSecOps & MLOps</p>
+        <p class="motto">Rigueur, collaboration et apprentissage continu.</p>
+      </div>
+      <img class="portrait" src="public/img/profil-2.webp" alt="Portrait de Fahasoavana MONJA" width="102" height="125" />
+    </header>
+    <p class="profile">De l’architecture logicielle à l’industrialisation de l’IA en passant par l'Administration système et Réseau, je conçois des systèmes robustes, sécurisés et observables. Mon expertise associe automatisation, infrastructures Cloud et on-premise, pipelines MLOps et analyse métier.</p>
+    <div class="columns">
+      <aside class="sidebar" aria-label="Coordonnées, compétences et formation">
+        <section>
+          <h2><span class="number">01 /</span>Contact</h2>
+          <div class="contact">
+            <span>Fianarantsoa, Madagascar</span>
+            <a href="mailto:fahasoavanamonja891@gmail.com">fahasoavanamonja891@gmail.com</a>
+            <a href="tel:+261347099370">+261 34 70 993 70</a>
+            <a href="https://github.com/MONJA-Faso">GitHub · MONJA-Faso</a>
+            <a href="https://www.linkedin.com/in/rabefinoana-fahasoavana-monja-9785912a8/">LinkedIn · Fahasoavana MONJA</a>
+          </div>
+        </section>
+        <section>
+          <h2><span class="number">02 /</span>Expertise</h2>
+          <div class="skill-group"><h3>Sécurité & automatisation</h3><p>DevSecOps, gestion des secrets, durcissement, Ansible, Terraform, GitHub Actions, GitLab CI, Jenkins.</p></div>
+          <div class="skill-group"><h3>Infrastructure & observabilité</h3><p>Docker, Kubernetes, Linux, HAProxy, Proxmox, Prometheus, Grafana, Stack TIG.</p></div>
+          <div class="skill-group"><h3>Intelligence artificielle</h3><p>Python, MLOps, vLLM, GPU Nvidia DGX Spark GB10, recherche sémantique, conception NLQ.</p></div>
+          <div class="skill-group"><h3>Logiciel & données</h3><p>React, TypeScript, Express, PHP, MySQL, PostgreSQL, MongoDB, architecture SaaS, analyse métier.</p></div>
+        </section>
+        <section>
+          <h2><span class="number">03 /</span>Formation</h2>
+          <article class="education"><p class="date">2025 – Présent</p><h3>Master en Intelligence Artificielle</h3><p>Gouvernance et Ingénierie de Données · ENI, Fianarantsoa.</p></article>
+          <article class="education"><p class="date">2021 – 2024</p><h3>Licence en Informatique</h3><p>Génie Logiciel et Base de Données · ENI, Fianarantsoa.</p></article>
+          <article class="education"><p class="date">2021</p><h3>Baccalauréat scientifique · Série C</h3><p>Collège Immaculée Conception, Mananjary.</p></article>
+        </section>
+        <section>
+          <h2><span class="number">04 /</span>Formations complémentaires</h2>
+          <ul class="training">
+            <li>Data sciences avec KNIME · E-DEA Academy · Juillet 2025.</li>
+            <li>Python · ODC Fianarantsoa · Avril 2025.</li>
+            <li>Initiation au DevOps · ODC · Juillet 2024.</li>
+            <li>Administration Système & Réseaux · SPRAY INFO · Avril–Août 2024.</li>
+            <li>Gouvernance d’Association · Fanainga+ · Juin 2024.</li>
+            <li>DELF B2 · Alliance Française Fianarantsoa · 2024.</li>
+          </ul>
+        </section>
+      </aside>
+      <div>
+        <section aria-labelledby="experience-title">
+          <h2 id="experience-title"><span class="number">05 /</span>Expérience professionnelle</h2>
+          <article class="experience">
+            <div class="experience-header"><span class="company">CAH · TELOS</span><span class="date">2026 – Aujourd’hui</span></div>
+            <h3>Architecte logicielle & Analyste métier & Concepteur de solutions IA</h3>
+            <p class="location">Toamasina, Madagascar · Plateforme SaaS intelligente en conception</p>
+            <ul>
+              <li>Analyse des besoins métier et formalisation des exigences fonctionnelles.</li>
+              <li>Conception de la structure organisationnelle : directions, services, postes, responsabilités et hiérarchie.</li>
+              <li>Modélisation des processus métier et des workflows.</li>
+              <li>Réflexion sur l’intégration de l’IA, de la recherche sémantique et du NLQ ; contribution à l’architecture fonctionnelle et aux évolutions du produit.</li>
+            </ul>
+            <div class="tags"><span>SaaS</span><span>Architecture</span><span>Analyse métier</span><span>IA / NLQ</span></div>
+          </article>
+          <article class="experience">
+            <div class="experience-header"><span class="company">Giris</span><span class="date">2025 – 2026</span></div>
+            <h3>DevSecOps & MLOps</h3>
+            <p class="location">France · 100 % télétravail</p>
+            <ul>
+              <li>Développement d’un agent IA autonome (Python, LLaVA VLM, vLLM) pour automatiser les tests web via Selenium ; architecture transférable à l’automatisation SEO et à la gestion de la réputation.</li>
+              <li>Orchestration de services IA (inférence LLM locale, Docker, Docker Compose) : déploiement de briques IA dans des SaaS et workflows multi-entités.</li>
+              <li>Automatisation Linux avec des playbooks Ansible : <strong>réduction du temps de remédiation d’environ 70 %</strong> et automatisation des tâches répétitives à grande échelle.</li>
+              <li>Administration Nginx/Apache et déploiement cloud sur Scaleway pour des services SaaS en production.</li>
+              <li>Stack TIG et Prometheus/Grafana : surveillance en temps réel, détection d’anomalies et reporting automatisé.</li>
+              <li>Pipelines MLOps de l’ingestion au monitoring ; infrastructures IA cloud/on-premise, Kubernetes et optimisation GPU Nvidia DGX Spark GB10.</li>
+              <li>Sécurisation des pipelines et des données : gestion des secrets, listes d’autorisation et durcissement des conteneurs.</li>
+            </ul>
+            <div class="tags"><span>Python / LLaVA / vLLM</span><span>Selenium</span><span>Docker Compose</span><span>Ansible</span><span>Scaleway</span><span>Nginx / Apache</span><span>TIG / Prometheus / Grafana</span></div>
+          </article>
+          <article class="experience">
+            <div class="experience-header"><span class="company">Youth Computing</span><span class="date">Sept. – Déc. 2024</span></div>
+            <h3>Développeur Full-Stack & DevOps · Stage</h3>
+            <p class="location">Fianarantsoa, Madagascar</p>
+            <ul>
+              <li>Développement d’E-Tady avec React et Express ; mise en place de CI/CD avec GitLab CI, Docker et Kubernetes.</li>
+              <li>Répartition de charge HAProxy et supervision Prometheus/Grafana.</li>
+            </ul>
+          </article>
+          <article class="experience">
+            <div class="experience-header"><span class="company">Youth Computing</span><span class="date">Mars – Mai 2024</span></div>
+            <h3>Développeur Frontend</h3>
+            <p class="location">Fianarantsoa, Madagascar</p>
+            <ul><li>Développement de l’interface responsive d’ISERANET avec React et Tailwind CSS.</li></ul>
+          </article>
+          <article class="experience">
+            <div class="experience-header"><span class="company">SPAT</span><span class="date">Sept. 2023 – Janv. 2024</span></div>
+            <h3>Développeur Web · Stage</h3>
+            <p class="location">Toamasina, Madagascar</p>
+            <ul><li>Application de gestion de l’affectation de matériels aux employés, avec PHP, Bootstrap et MySQL.</li></ul>
+          </article>
+        </section>
+        <section>
+          <h2><span class="number">06 /</span>Projets sélectionnés</h2>
+          <div class="projects">
+            <p><strong>TELOS</strong> — Conception SaaS pour structurer les organisations et exploiter leurs données de pilotage.</p>
+            <p><a href="https://gitlab.com/MONJA89/my-project"><strong>E-Tady ↗</strong></a> — Recherche de logements, carte interactive, messagerie et déploiement DevOps.</p>
+            <p><a href="https://gestion-patient.vercel.app"><strong>Gestion Patient ↗</strong></a> — Application web avec authentification, rôles et tableau de bord.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer><span>LOGICIEL · INFRASTRUCTURES · IA</span><span>FAHASOAVANA MONJA / CURRICULUM VITÆ</span></footer>
+  </main>
+</body>
+</html>

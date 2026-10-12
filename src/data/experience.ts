@@ -1,10 +1,11 @@
 export const experiences = [
     {
-      title: 'Conception d’une plateforme SaaS intelligente — TELOS',
+      title: 'Architecte logicielle  &  Concepteur et developpeur de solutions IA  &  Analyste métier',
       company: 'CAH',
-      location: 'Architecture logicielle · Analyse métier · Solutions IA',
+      location: 'Toamasina, Madagascar',
       period: '2026 – Aujourd’hui · En cours',
       description: [
+        'Conception d’une plateforme SaaS intelligente ',
         'Participation à la conception de TELOS, une plateforme SaaS visant à structurer l’organisation des entreprises et à transformer leurs données organisationnelles en informations exploitables pour le pilotage des activités.',
         'Analyse des besoins métier et formalisation des exigences fonctionnelles.',
         'Conception de la structure organisationnelle : directions, services, postes, responsabilités et hiérarchie.',
@@ -15,17 +16,20 @@ export const experiences = [
       technologies: ['Architecture logicielle', 'Analyse métier', 'SaaS', 'Workflows', 'IA', 'Recherche sémantique', 'NLQ']
     },
     {
-      title: 'Ingénieur DevSecOps & MLOps',
-      company: 'Iris', 
+      title: 'DevSecOps & MLOps',
+      company: 'Giris',
       location: 'France / 100% Télétravail',
-      period: '2024 – Présent',
+      period: '2025 – 2026',
       description: [
-        "Mise en place et automatisation de pipelines MLOps (Ingestion, Entraînement, Validation, Déploiement et Monitoring).",
-        "Conception et maintenance d'infrastructures IA Cloud & On-premise (Entités Giris, Diris, AIris, Liris).",
-        "Conteneurisation et orchestration de services IA (Docker, Kubernetes) et optimisation GPU (Nvidia DGX Spark GB10).",
-        "Sécurisation des pipelines et des données (Gestion des secrets, Whitelisting, Durcissement des conteneurs)."
+        'Conception et développement d’un agent IA autonome (Python, LLaVA VLM, vLLM) pour automatiser les tests fonctionnels web via Selenium ; architecture transférable à une plateforme d’automatisation SEO et de gestion de la réputation.',
+        'Orchestration de services IA (inférence LLM locale, Docker, Docker Compose) pour des workflows multi-entités : déploiement de briques IA dans des plateformes SaaS.',
+        'Automatisation des infrastructures Linux avec des playbooks Ansible : réduction du temps de remédiation d’environ 70 % et automatisation des tâches répétitives à grande échelle.',
+        'Administration de Nginx et Apache et déploiement cloud sur Scaleway pour exploiter des services SaaS en production.',
+        'Mise en place de la stack TIG et de Prometheus/Grafana pour la surveillance en temps réel, la détection d’anomalies et le reporting automatisé.',
+        'Automatisation des pipelines MLOps, de l’ingestion au monitoring ; maintenance des infrastructures IA cloud et on-premise, orchestration Kubernetes et optimisation GPU Nvidia DGX Spark GB10.',
+        'Sécurisation des pipelines et des données par la gestion des secrets, le filtrage par listes d’autorisation et le durcissement des conteneurs.'
       ],
-      technologies: ['Python', 'Docker', 'Kubernetes', 'vLLM', 'Ansible', 'Github Action', 'Stack TIG', 'GPU GB10' , 'Jenkins' , 'Terraform']
+      technologies: ['Python', 'LLaVA VLM', 'vLLM', 'Selenium', 'Docker', 'Docker Compose', 'Kubernetes', 'Ansible', 'Linux', 'Nginx', 'Apache', 'Scaleway', 'Stack TIG', 'Prometheus', 'Grafana', 'GitHub Actions', 'GPU GB10', 'Jenkins', 'Terraform']
     },
     {
       title: 'Développeur Full-Stack & DevOps (Stage)',

@@ -1,6 +1,6 @@
 # Portfolio — Fahasoavana MONJA
 
-Portfolio React, TypeScript et Vite. Direction visuelle : typographie sobre, navigation translucide, cartes arrondies et identité Malagasy en blanc, rouge et vert olive.
+Portfolio React, TypeScript et Vite. Direction visuelle : typographie sobre, navigation translucide, cartes arrondies et palette sobre et petit drapeau malagasy dans la signature.
 
 ## Développement
 
